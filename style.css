@@ -422,6 +422,11 @@ a {
   .banner-text {
     bottom: 16%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    left: 0%;
   }
   .con-right {
     width: 100%;
