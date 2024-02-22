@@ -768,7 +768,7 @@ a {
     border-bottom-left-radius: 66px;
   }
 }
-@media only screen and (max-width: 1224px) {
+@media only screen and (max-width: 1224px) and (min-width: 1224px) {
   .footer-inr {
     gap: 5rem;
     justify-content: center;
