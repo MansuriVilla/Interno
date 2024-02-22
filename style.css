@@ -783,4 +783,11 @@ a {
   .f-col-1 {
     margin: 0 auto;
   }
+  .footer-left {
+    margin-right: 0px;
+  }
+  .footer-inr,
+  .footer-right {
+    gap: 5rem;
+  }
 }
