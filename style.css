@@ -432,6 +432,13 @@ a {
     width: 100%;
   }
   /* faq style start */
+  .ftr__list.nav {
+    width: 100%;
+    text-align: left;
+    padding: 10px 12px;
+    margin: 20px 0px;
+    border-bottom: 1px solid #292f36;
+  }
   .nav-folderized h1 {
     cursor: pointer;
   }
@@ -637,6 +644,7 @@ a {
   }
   .footer-left {
     margin-right: 0;
+    width: 100%;
   }
   .f-ul {
     justify-content: space-between;
@@ -644,6 +652,9 @@ a {
   .f-li,
   .vb {
     margin: 0;
+  }
+  .col-li {
+    margin: 42px 0px;
   }
 }
 @media only screen and (max-width: 510px) {
@@ -762,13 +773,13 @@ a {
     gap: 5rem;
     justify-content: center;
   }
-  .footer-left {
+  /* .footer-left {
     width: 414px;
     margin-right: 0;
-  }
-  .footer-right {
+  } */
+  /* .footer-right {
     gap: 81px;
-  }
+  } */
   .f-col-1 {
     margin: 0 auto;
   }
