@@ -445,7 +445,7 @@ a {
   .nav-folderized ul {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease-out;
+    transition: max-height 0.5s ease-out;
   }
   .nav-folderized .nav h1:after {
     content: "+";
@@ -457,7 +457,7 @@ a {
   .nav-folderized .nav.open ul {
     height: auto;
     max-height: 500px;
-    transition: max-height 1s ease-in !important;
+    transition: max-height 0.5s ease-in !important;
   }
   .dsk {
     display: none;
