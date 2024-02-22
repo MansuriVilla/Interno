@@ -574,7 +574,6 @@ a {
   .call-section {
     display: grid;
     place-items: center;
-    grid-auto-flow: column;
   }
   .con-.right {
     width: 100%;
