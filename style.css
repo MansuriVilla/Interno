@@ -496,9 +496,14 @@ a {
     animation-fill-mode: forwards;
     opacity: 1;
     backdrop-filter: blur(15px);
+  }
+  .menu-lis {
     justify-content: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    gap: 3rem;
   }
 
   @keyframes drop {
