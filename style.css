@@ -2,8 +2,10 @@
   padding: 0px;
   margin: 0px;
 }
-body {
+body,
+html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ul li {
   padding: 0;
@@ -29,10 +31,7 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body,
-html {
-  scroll-behavior: smooth;
-}
+
 ul li {
   list-style: none;
 }
