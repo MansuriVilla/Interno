@@ -4,7 +4,7 @@ jQuery(".nav-folderized h1").click(function () {
   jQuery(this).parent(".nav").toggleClass("open");
   jQuery("html, body").animate(
     { scrollTop: jQuery(this).offset().top - 170 },
-    500
+    1500
   );
 });
 
@@ -20,4 +20,9 @@ function menu() {
 function close() {
   var links = document.getElementById("ss");
   links.classList.toggle("close");
+}
+
+function searchBar() {
+  var box = document.getElementById("search-btn");
+  box.classList.toggle("box");
 }

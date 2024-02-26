@@ -7,6 +7,11 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+input {
+  border: 0px;
+  outline: 0px;
+  background: transparent;
+}
 ul li {
   padding: 0;
   margin: 0;
@@ -80,11 +85,24 @@ a {
   height: 20px;
   display: block;
 }
+.search-box {
+  max-width: 100%;
+  border-radius: 20px;
+  border: 1px solid #292f36;
+  padding: 5px 10px;
+  transform-origin: right;
+  display: flex;
+  align-items: center;
+}
+/* .open-searchbar {
+} */
+.box {
+  width: 200%;
+}
 .hero-banner {
   margin: 30px 0;
   background-image: url(./img/Photo_2.png);
   height: 760px;
-  width: 1200px;
   max-width: 100%;
   position: relative;
   background-position: center center;
@@ -111,6 +129,7 @@ a {
   color: #fff;
   display: flex;
   margin: 20px 0;
+  width: max-content;
   align-items: flex-start;
   padding: 26px 48px;
 }
@@ -127,6 +146,7 @@ a {
   justify-content: space-between;
 }
 .sas {
+  color: #cda274;
   display: inline-block;
   margin: 0 0 0 10px;
 }
@@ -140,6 +160,11 @@ a {
 .row-card,
 .ss-cdr {
   display: flex;
+}
+.ss-cdr {
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
 .process {
   margin: 50px auto;
@@ -349,21 +374,80 @@ a {
 }
 .menu-links,
 .menu-lis {
+  align-items: center;
   display: flex;
 }
-
-.menu-lis > li > a,
-.menu-lis > li > img {
+.menu-lis > li > a {
   display: grid;
   place-items: center;
   color: #292f36;
   border-bottom: 2px solid transparent;
 }
-
 .menu-lis > li > a:hover {
   border-bottom: 2px solid #292f36;
 }
+
+@media only screen and (max-width: 1030px) {
+  .c-p {
+    font-size: 12px;
+  }
+  .c-h {
+    font-size: 16px;
+  }
+  .re-p-p {
+    font-size: 18px;
+  }
+  .card {
+    margin: 50px 10px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer-left {
+    margin-right: 0px;
+    width: 420px;
+    text-align: center;
+  }
+  .left,
+  .f-ul {
+    justify-content: center;
+  }
+  .f-li {
+    margin: 0px 35px 0px 0px;
+  }
+  .footer-inr {
+    justify-content: center;
+    gap: 50px;
+  }
+}
 @media only screen and (max-width: 860px) {
+  .c-h {
+    font-size: 25px;
+  }
+  .c-p {
+    font: 14px;
+  }
+  .con-right {
+    height: 550px;
+  }
+  .banner-text > h1 {
+    font-size: 42px;
+  }
+  .banner-text > p {
+    font-size: 18px;
+  }
+  .banner-text {
+    bottom: 16%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    left: 0%;
+  }
+  .banner-button {
+    margin: 0px auto;
+  }
+
   .mobile-menu {
     position: absolute;
     z-index: 999;
@@ -421,13 +505,83 @@ a {
   }
   .menu-icon {
     display: block;
+    cursor: pointer;
   }
   .right-ul {
     display: none;
   }
+  .process {
+    padding: 0px 10px;
+  }
+  .hero-banner {
+    height: 420px;
+  }
+  .search-box {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+  }
+  .btn {
+    padding: 15px 25px;
+  }
+  .banner-text {
+    bottom: 13%;
+  }
+  .arc-bottom {
+    margin: 15px 0px;
+  }
+  .menu-lis {
+    gap: 80px;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 320px) {
+  .card-t-t {
+    margin: 0;
+    text-align: center;
+  }
+  .card-top {
+    flex-direction: column;
+  }
+  .menu-lis {
+    gap: 80px;
+    flex-direction: column;
+  }
+  .banner-text {
+    bottom: 13%;
+  }
+  .arc-bottom {
+    margin: 15px 0px;
+  }
+  .btn {
+    padding: 15px 25px;
+  }
+  .search-box {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+  }
+  .hero-banner {
+    height: 420px;
+  }
+  .c-h {
+    font-size: 25px;
+  }
+  .process {
+    padding: 0px 10px;
+  }
+  .con-right {
+    height: 550px;
+  }
+  .banner-text > h1 {
+    font-size: 42px;
+  }
+  .banner-text > p {
+    font-size: 18px;
+  }
   .banner-text {
     bottom: 16%;
     text-align: center;
@@ -474,6 +628,7 @@ a {
 
   .menu-icon {
     display: block;
+    cursor: pointer;
   }
   .right-ul {
     display: none;
@@ -496,7 +651,6 @@ a {
     position: absolute;
     z-index: 999;
     background: #ffffff60;
-    min-width: none;
     min-height: 100vh;
     padding: 20px 0px;
     width: 100%;
@@ -738,7 +892,7 @@ a {
 }
 @media only screen and (max-width: 320px) {
   .con-h {
-    font-size: 25px;
+    font-size: 28px;
   }
   .arc-img {
     height: 245px;
@@ -756,6 +910,7 @@ a {
   }
   .card {
     width: 100%;
+    height: 320px;
   }
   .btn {
     padding: 10px 12px;

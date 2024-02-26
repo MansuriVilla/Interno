@@ -52,11 +52,20 @@
                     <li class="nav-links"><a href="#">Blog</a></li>
                     <li class="nav-links"><a href="#">Contact</a></li>
                     <li class="nav-links">
-                      <img
-                        class="search-icon"
-                        src="img/Vector_search.png"
-                        alt="Search_icon"
-                      />
+                      <button
+                        class="search-box"
+                        id="search-btn"
+                        onclick="searcBar()"
+                      >
+                        <input
+                          type="text"
+                          class="jost box"
+                          placeholder="Search Interno..."
+                          name="Serach"
+                          id="Search-bar"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
                     </li>
                   </div>
                 </div>
@@ -77,12 +86,12 @@
                   from available, majority.
                 </p>
                 <div class="banner-button">
-                  <button class="btn jost">
+                  <a class="btn jost" href="#">
                     Get Started
                     <span class="sas"
-                      ><img class="ss" src="./img/Vector_arrow.png" alt="arrow"
-                    /></span>
-                  </button>
+                      ><i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -100,11 +109,7 @@
               </p>
               <a href="#" class="p-a jost"
                 >Read More
-                <span class="sas"
-                  ><img
-                    class="ss"
-                    src="./img/Vector_arrow.png"
-                    alt="arrow" /></span
+                <span class="sas"><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </div>
             <div class="process">
@@ -115,11 +120,7 @@
               </p>
               <a href="#" class="p-a jost"
                 >Read More
-                <span class="sas"
-                  ><img
-                    class="ss"
-                    src="./img/Vector_arrow.png"
-                    alt="arrow" /></span
+                <span class="sas"><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </div>
             <div class="process">
@@ -130,11 +131,7 @@
               </p>
               <a href="#" class="p-a jost"
                 >Read More
-                <span class="sas"
-                  ><img
-                    class="ss"
-                    src="./img/Vector_arrow.png"
-                    alt="arrow" /></span
+                <span class="sas"><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </div>
           </div>
@@ -154,7 +151,7 @@
             <div class="call-section">
               <div class="callnm">
                 <div class="call-ioc">
-                  <img class="phn" src="./img/Call.png" alt="Phone_icon" />
+                  <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="call-text">
                   <h5 class="con-call-h jost" style="color: #292f36">
@@ -164,12 +161,12 @@
                 </div>
               </div>
               <div class="banner-button">
-                <button class="btn jost">
+                <a class="btn jost" href="#">
                   Get Free Estimate
                   <span class="sas"
-                    ><img class="ss" src="./img/Vector_arrow.png" alt="arrow"
-                  /></span>
-                </button>
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </a>
               </div>
             </div>
           </div>
@@ -275,11 +272,7 @@
                     <p class="jost">26 December, 2022</p>
                   </div>
                   <div class="call-ioc ss ss-cdr">
-                    <img
-                      class="phn"
-                      src="./img/arrow_bottom.png"
-                      alt="Arrow_icon"
-                    />
+                    <i class="fa-solid fa-angle-right"></i>
                   </div>
                 </div>
               </div>
@@ -304,11 +297,7 @@
                     <p class="jost">22 December, 2022</p>
                   </div>
                   <div class="call-ioc ss ss-cdr fv">
-                    <img
-                      class="phn"
-                      src="./img/arrow_bottom.png"
-                      alt="Arrow_icon"
-                    />
+                    <i class="fa-solid fa-angle-right"></i>
                   </div>
                 </div>
               </div>
@@ -333,11 +322,7 @@
                     <p class="jost">25 December, 2022</p>
                   </div>
                   <div class="call-ioc ss ss-cdr">
-                    <img
-                      class="phn"
-                      src="./img/arrow_bottom.png"
-                      alt="Arrow_icon"
-                    />
+                    <i class="fa-solid fa-angle-right"></i>
                   </div>
                 </div>
               </div>
@@ -362,16 +347,32 @@
               <div class="footer-icon">
                 <ul class="f-ul">
                   <li class="f-li">
-                    <img src="./img/fb.png" alt="FackBook" class="f-img" />
+                    <a href="#">
+                      <img src="./img/fb.png" alt="FackBook" class="f-img" />
+                    </a>
                   </li>
                   <li class="f-li">
-                    <img src="./img/insta.png" alt="Instagram" class="f-img" />
+                    <a href="#">
+                      <img
+                        src="./img/insta.png"
+                        alt="Instagram"
+                        class="f-img"
+                      />
+                    </a>
                   </li>
                   <li class="f-li">
-                    <img src="./img/twitter.png" alt="Twitter" class="f-img" />
+                    <a href="#">
+                      <img
+                        src="./img/twitter.png"
+                        alt="Twitter"
+                        class="f-img"
+                      />
+                    </a>
                   </li>
                   <li class="f-li">
-                    <img src="./img/link.png" alt="Linkdn" class="f-img" />
+                    <a href="#">
+                      <img src="./img/link.png" alt="Linkdn" class="f-img" />
+                    </a>
                   </li>
                 </ul>
               </div>
