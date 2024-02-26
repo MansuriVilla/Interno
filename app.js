@@ -22,7 +22,9 @@ function close() {
   links.classList.toggle("close");
 }
 
-function searchBar() {
-  var box = document.getElementById("search-btn");
-  box.classList.toggle("box");
-}
+$(document).ready(function () {
+  $(".fa-magnifying-glass").click(function () {
+    $(".wrap, .input").toggleClass("active");
+    $("input[type='text']").focus();
+  });
+});
