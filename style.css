@@ -138,6 +138,7 @@ a {
 }
 .buttons > button {
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #ffffff60;
   border-radius: 50px;
   padding: 20px;
@@ -604,6 +605,9 @@ a {
 }
 
 @media only screen and (max-width: 800px) and (min-width: 320px) {
+  .buttons {
+    bottom: 8%;
+  }
   .card-t-t {
     margin: 0;
     text-align: center;
