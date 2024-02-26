@@ -128,6 +128,46 @@ a {
   background-position: center center;
   border-radius: 70px;
 }
+.buttons {
+  gap: 12px;
+  display: flex;
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttons > button {
+  backdrop-filter: blur(10px);
+  background-color: #ffffff60;
+  border-radius: 50px;
+  padding: 20px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
+.buttons > button:hover {
+  background-color: #292f3677;
+  color: #fff;
+}
+.sliders {
+  display: flex;
+  gap: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-row {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  min-width: 100%;
+}
 .banner-text {
   bottom: 20%;
   left: 5%;
@@ -407,6 +447,11 @@ a {
   border-bottom: 2px solid #292f36;
 }
 
+@media only screen and (max-width: 1080px) {
+  .wrap.active {
+    max-width: 179px;
+  }
+}
 @media only screen and (max-width: 1030px) {
   .c-p {
     font-size: 12px;
@@ -439,7 +484,7 @@ a {
     gap: 50px;
   }
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 861px) {
   .c-h {
     font-size: 25px;
   }
