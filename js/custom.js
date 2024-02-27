@@ -43,7 +43,6 @@ $(document).ready(function () {
     ],
   });
 
-  // hero seciton slider end
   $(".logo-list-slider").owlCarousel({
     loop: true,
     margin: 10,
@@ -74,4 +73,37 @@ $(document).ready(function () {
       "<i class='fa fa-chevron-right'></i>",
     ],
   });
+
+  $(".row-card").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        // margin: 120,
+        items: 1,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayTimeout: 1500,
+      },
+      600: {
+        // margin: 120,
+        items: 1,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayTimeout: 1500,
+      },
+      1000: {
+        items: 3,
+        loop: false,
+        mouseDrag: false,
+      },
+    },
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>",
+    ],
+  });
 });
+
+// hero seciton slider end
