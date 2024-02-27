@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interno</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
     <!-- google fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,9 +43,9 @@
                   <i class="fa-solid fa-xmark" id="ss"></i>
                 </div>
               </div>
-              <ul class="right-ul mobile-menu jost" id="show">
+              <div class="right-ul mobile-menu jost" id="show">
                 <div class="menu-links">
-                  <div class="menu-lis">
+                  <ul class="menu-lis">
                     <li class="nav-links"><a href="#">Home</a></li>
                     <li class="nav-links"><a href="#">Pages</a></li>
                     <li class="nav-links"><a href="#">Services</a></li>
@@ -52,23 +53,23 @@
                     <li class="nav-links"><a href="#">Blog</a></li>
                     <li class="nav-links"><a href="#">Contact</a></li>
                     <li class="nav-links">
+                      <input
+                        type="text"
+                        class="jost box input"
+                        placeholder="Search Interno..."
+                        name="Serach"
+                        id="Search-bar"
+                      />
                       <button class="search-box wrap" id="search-btn">
-                        <input
-                          type="text"
-                          class="jost box input"
-                          placeholder="Search Interno..."
-                          name="Serach"
-                          id="Search-bar"
-                        />
                         <i
                           class="fa-solid fa-magnifying-glass"
                           style="color: #292f36"
                         ></i>
                       </button>
                     </li>
-                  </div>
+                  </ul>
                 </div>
-              </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -76,8 +77,8 @@
       <section class="hero-section">
         <div class="container">
           <div class="slider-row">
-            <div class="sliders">
-              <div class="slider">
+            <div class="sliders owl-carousel owl-theme">
+              <div class="slider item">
                 <div class="hero-banner">
                   <div class="banner-content">
                     <div class="banner-text">
@@ -99,7 +100,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider">
+              <div class="slider item">
                 <div
                   class="hero-banner"
                   style="
@@ -125,7 +126,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider">
+              <div class="slider item">
                 <div
                   class="hero-banner"
                   style="
@@ -149,20 +150,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="buttons">
-              <button
-                class="w3-button w3-black w3-display-left"
-                onclick="plusDivs(-1)"
-              >
-                <i class="fa-solid fa-angle-left"></i>
-              </button>
-              <button
-                class="w3-button w3-black w3-display-right"
-                onclick="plusDivs(1)"
-              >
-                <i class="fa-solid fa-angle-right"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -457,7 +444,9 @@
             <div class="footer-right">
               <div class="f-col-1">
                 <ul class="col-ul">
-                  <h1 class="col-h dm-serif">Pages</h1>
+                  <li>
+                    <h3 class="col-h dm-serif">Pages</h3>
+                  </li>
                   <li class="col-li">
                     <a href="#" class="col-a jost">About Us</a>
                   </li>
@@ -477,38 +466,46 @@
               </div>
               <div class="f-col-1 vb">
                 <ul class="col-ul">
-                  <h1 class="col-h dm-serif">Services</h1>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">Kitchan</a>
+                  <li>
+                    <h3 class="col-h dm-serif">Services</h3>
                   </li>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">Living Area</a>
-                  </li>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">Bathroom</a>
-                  </li>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">Dinning Hall</a>
-                  </li>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">Bedroom</a>
-                  </li>
+                  <ul>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">Kitchan</a>
+                    </li>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">Living Area</a>
+                    </li>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">Bathroom</a>
+                    </li>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">Dinning Hall</a>
+                    </li>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">Bedroom</a>
+                    </li>
+                  </ul>
                 </ul>
               </div>
               <div class="f-col-1 cv">
                 <ul class="col-ul">
-                  <h1 class="col-h dm-serif">Contact</h1>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost"
-                      >55 East Birchwood Ave. Brooklyn, New York 11201</a
-                    >
+                  <li>
+                    <h3 class="col-h dm-serif">Contact</h3>
                   </li>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">Contact@interno.com</a>
-                  </li>
-                  <li class="col-li">
-                    <a href="#" class="col-a jost">(123) 456-7890</a>
-                  </li>
+                  <ul>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost"
+                        >55 East Birchwood Ave. Brooklyn, New York 11201</a
+                      >
+                    </li>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">Contact@interno.com</a>
+                    </li>
+                    <li class="col-li">
+                      <a href="#" class="col-a jost">(123) 456-7890</a>
+                    </li>
+                  </ul>
                 </ul>
               </div>
             </div>
@@ -606,7 +603,8 @@
         </div>
       </section>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="app.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
     </div>
   </body>
 </html>
