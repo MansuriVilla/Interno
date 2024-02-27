@@ -32,7 +32,7 @@ $(document).ready(function () {
 // hero seciton slider start
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".sliders ").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
@@ -42,6 +42,39 @@ $(document).ready(function () {
       "<i class='fa fa-chevron-right'></i>",
     ],
   });
-});
 
-// hero seciton slider end
+  // hero seciton slider end
+  $(".logo-list-slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        margin: 120,
+        items: 1,
+        nav: true,
+        mouseDrag: true,
+        // autoplay: true,
+        // autoplayTimeout: 1000,
+      },
+      600: {
+        margin: 120,
+        items: 3,
+        nav: false,
+        mouseDrag: true,
+        // autoplay: true,
+        // autoplayTimeout: 1000,
+      },
+      1000: {
+        items: 5,
+        nav: true,
+        loop: false,
+        mouseDrag: false,
+      },
+    },
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>",
+    ],
+  });
+});
