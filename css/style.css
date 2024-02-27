@@ -154,14 +154,14 @@ a {
   padding: 20px !important;
   height: 24px;
   width: 24px;
-  color: #292f36 !important;
+  color: #292f36;
   cursor: pointer;
   display: flex;
   transition: all 0.2s ease;
   align-items: center;
   justify-content: center;
 }
-.sliders.owl-carousel .owl-nav button :hover {
+.sliders.owl-carousel .owl-nav button:hover {
   background-color: #292f3677 !important;
   color: #fff;
 }
@@ -302,7 +302,6 @@ a {
   border-radius: 50px;
   align-items: center;
   padding: 30px;
-  margin: 50px 20px;
 }
 .card-t {
   height: 77px;
