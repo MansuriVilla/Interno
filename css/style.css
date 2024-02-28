@@ -686,7 +686,7 @@ a {
 }
 @media only screen and (max-width: 800px) {
   .sliders.owl-carousel .owl-nav {
-    bottom: 8%;
+    bottom: 0%;
   }
   .card-t-t {
     margin: 0;
@@ -699,13 +699,11 @@ a {
     gap: 80px;
     flex-direction: column;
   }
-  .banner-text {
-    bottom: 13%;
-  }
   .arc-bottom {
     margin: 15px 0px;
   }
   .btn {
+    border-radius: 10px;
     padding: 15px 25px;
   }
   .search-box {
@@ -713,9 +711,6 @@ a {
     border-right: 0px;
     border-left: 0px;
     border-radius: 0px;
-  }
-  .hero-banner {
-    height: 420px;
   }
   .c-h {
     font-size: 25px;
@@ -733,7 +728,7 @@ a {
     font-size: 18px;
   }
   .banner-text {
-    bottom: 22%;
+    bottom: 20%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -922,6 +917,7 @@ a {
   .call-section {
     display: grid;
     place-items: center;
+    grid-auto-flow: column;
   }
   .con-.right {
     width: 100%;
@@ -999,7 +995,7 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .p-a {
-    font-size: 16px;
+    font-size: 14px;
   }
   .arc-card,
   .arc-img,
@@ -1007,10 +1003,13 @@ a {
     width: auto;
   }
   .p-p {
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .con-left {
+    width: 100%;
   }
   .h-p {
-    font-size: 30px;
+    font-size: 22px;
   }
   .hero-banner {
     height: 380px;
