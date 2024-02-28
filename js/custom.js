@@ -84,13 +84,41 @@ $(document).ready(function () {
         items: 1,
         mouseDrag: true,
         autoplay: true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 3500,
       },
       600: {
         items: 2,
         mouseDrag: true,
         autoplay: true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 3500,
+      },
+      1000: {
+        items: 3,
+        loop: false,
+        mouseDrag: false,
+      },
+    },
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>",
+    ],
+  });
+  $(".arc-card-row").owlCarousel({
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+      },
+      600: {
+        items: 1,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
       },
       1000: {
         items: 3,

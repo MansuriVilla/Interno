@@ -346,6 +346,7 @@ a {
   height: min-content;
   border-radius: 62px;
   padding: 21px;
+  margin: 0px auto;
 }
 .arc-bottom {
   justify-content: space-between;
@@ -468,17 +469,14 @@ a {
   }
 }
 @media only screen and (max-width: 1224px) {
+  .footer-inr,
+  .footer-right {
+    flex-wrap: wrap;
+  }
   .footer-inr {
-    gap: 5rem;
+    gap: 1rem;
     justify-content: center;
   }
-  /* .footer-left {
-    width: 414px;
-    margin-right: 0;
-  } */
-  /* .footer-right {
-    gap: 81px;
-  } */
   .f-col-1 {
     margin: 0 auto;
   }
@@ -878,7 +876,7 @@ a {
     border-radius: 50px;
   }
   .banner-text > h1 {
-    font-size: 34px;
+    font-size: 28px;
   }
   .arc-p,
   .banner-text > p,
@@ -887,7 +885,7 @@ a {
   .con-call-p,
   .p-p,
   .re-p-p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
   }
   .btn {
@@ -911,6 +909,7 @@ a {
     font-size: 14px;
   }
   .process {
+    margin: 30px 10px;
     max-width: 420px;
     padding: 0;
   }
@@ -938,7 +937,7 @@ a {
   .f-p {
     font-size: 18px;
   }
-  .card-t {
+  .owl-carosel .owl-item .card-t {
     height: 60px;
     width: 60px;
   }
@@ -967,17 +966,25 @@ a {
   .company-name {
     font-size: 30px;
   }
-  .arc-card,
-  .arc-img,
-  .ss-cdr {
+
+  .arc-img {
     width: auto;
+  }
+  .ss-cdr {
+    width: 44px;
+    height: 44px;
+  }
+  .arc-card {
+    max-width: 360px;
+    margin: 0px auto;
   }
   .left {
     justify-content: center;
   }
   .footer-left {
-    margin-right: 0;
+    margin: 0 auto;
     width: 100%;
+    max-width: 420px;
   }
   .f-ul {
     justify-content: space-between;
