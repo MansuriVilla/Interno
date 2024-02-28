@@ -905,7 +905,7 @@ a {
   }
   .process {
     margin: 30px 10px;
-    max-width: 420px;
+    max-width: 275px;
     padding: 0;
   }
   .call-ioc {
@@ -983,7 +983,7 @@ a {
     max-width: 420px;
   }
   .f-ul {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .f-li,
   .vb {
