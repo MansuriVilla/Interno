@@ -105,7 +105,7 @@ $(document).ready(function () {
   });
   $(".arc-card-row").owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 40,
     responsiveClass: true,
     responsive: {
       0: {
@@ -121,6 +121,7 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
       },
       1000: {
+        margin: 70,
         items: 3,
         loop: false,
         mouseDrag: false,
