@@ -122,6 +122,7 @@ $(document).ready(function () {
       },
       1000: {
         margin: 70,
+        width: auto,
         items: 3,
         loop: false,
         mouseDrag: false,
