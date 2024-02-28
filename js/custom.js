@@ -37,6 +37,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     items: 1,
+    dots: false,
     navText: [
       "<i class='fa fa-chevron-left'></i>",
       "<i class='fa fa-chevron-right'></i>",

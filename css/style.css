@@ -64,7 +64,6 @@ a {
 }
 .header-inner {
   justify-content: space-between;
-  margin: 30px 0;
 }
 .left {
   gap: 10px;
@@ -129,7 +128,6 @@ a {
 }
 
 .hero-banner {
-  margin: 30px 0;
   background-image: url(../img/Photo_2.png);
   height: 760px;
   max-width: 100%;
@@ -240,7 +238,6 @@ a {
   font-size: 24px;
 }
 .process {
-  margin: 50px auto;
   width: auto;
   padding: 0 30px;
 }
@@ -288,7 +285,6 @@ a {
   font-size: 50px;
 }
 .sfd {
-  margin: 50px auto;
   border-radius: 70px;
   padding: 80px 40px;
 }
@@ -327,7 +323,6 @@ a {
   margin: 25px 0;
 }
 .logo-row {
-  margin: 120px auto;
   flex-wrap: wrap;
   row-gap: 5rem;
 }
@@ -339,7 +334,6 @@ a {
 }
 .arc-h {
   font-size: 50px;
-  margin: 12px 0;
 }
 .col-a,
 .f-p {
@@ -381,6 +375,14 @@ a {
 .fv {
   background-color: #fff;
 }
+.title {
+  max-width: 530px;
+  padding: 0px 0px 40px;
+  margin: 0 auto;
+}
+.home-page-section {
+  margin: 50px 0px;
+}
 .ss-cdr {
   width: 52px;
   height: 52px;
@@ -393,7 +395,6 @@ a {
 }
 .arc-card-row {
   gap: 15px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .arc-h-t {
@@ -421,7 +422,6 @@ a {
 .footer-inr,
 .footer-right {
   display: flex;
-  flex-wrap: wrap;
 }
 .cv {
   width: 258px;
