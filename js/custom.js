@@ -23,7 +23,7 @@ function close() {
 }
 
 $(document).ready(function () {
-  $(".fa-magnifying-glass").click(function () {
+  $(".search-box").click(function () {
     $(".wrap, .input").toggleClass("active");
     $("input[type='text']").focus();
   });
@@ -79,6 +79,11 @@ $(document).ready(function () {
     loop: true,
     margin: 30,
     responsiveClass: true,
+    dots: false,
+    navText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>",
+    ],
     responsive: {
       0: {
         items: 1,
@@ -87,6 +92,7 @@ $(document).ready(function () {
         autoplayTimeout: 3500,
       },
       600: {
+        nav: true,
         items: 2,
         mouseDrag: true,
         autoplay: true,
@@ -98,10 +104,6 @@ $(document).ready(function () {
         mouseDrag: false,
       },
     },
-    navText: [
-      "<i class='fa fa-chevron-left'></i>",
-      "<i class='fa fa-chevron-right'></i>",
-    ],
   });
   $(".arc-card-row").owlCarousel({
     loop: true,
@@ -115,6 +117,13 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         width: 420,
       },
+      765: {
+        items: 2,
+        mouseDrag: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        width: 420,
+      },
       600: {
         items: 1,
         mouseDrag: true,
@@ -123,7 +132,7 @@ $(document).ready(function () {
         width: 420,
       },
       1000: {
-        margin: 40,
+        margin: 80,
         autowidth: true,
         items: 3,
         loop: false,
