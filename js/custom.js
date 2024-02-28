@@ -29,6 +29,8 @@ $(document).ready(function () {
   });
 });
 
+// slider animation start
+
 // hero seciton slider start
 
 $(document).ready(function () {
@@ -43,6 +45,10 @@ $(document).ready(function () {
       "<i class='fa fa-chevron-right'></i>",
     ],
   });
+
+  // hero seciton slider end
+
+  // logo section script start
 
   $(".logo-list-slider").owlCarousel({
     loop: true,
@@ -75,6 +81,10 @@ $(document).ready(function () {
     ],
   });
 
+  // logo section script end
+
+  // review section script start
+
   $(".row-card").owlCarousel({
     loop: true,
     margin: 30,
@@ -105,6 +115,11 @@ $(document).ready(function () {
       },
     },
   });
+
+  // review section script end
+
+  //arc section script start
+
   $(".arc-card-row").owlCarousel({
     loop: true,
     margin: 10,
@@ -144,6 +159,7 @@ $(document).ready(function () {
       "<i class='fa fa-chevron-right'></i>",
     ],
   });
-});
 
-// hero seciton slider end
+  //arc section script end
+});
+// slider animation end
