@@ -488,7 +488,7 @@ a {
   }
   .footer-inr,
   .footer-right {
-    gap: 5rem;
+    gap: 1rem;
   }
 }
 @media only screen and (max-width: 1200px) {
