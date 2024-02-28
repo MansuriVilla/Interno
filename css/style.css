@@ -108,7 +108,6 @@ a {
   padding-right: 13px;
   cursor: pointer;
 }
-
 .wrap.active {
   width: 250px;
   transition: all 0.5s ease;
@@ -116,7 +115,9 @@ a {
 .input {
   display: none;
 }
-
+.col-h {
+  font-size: 25px;
+}
 .input.active {
   display: block;
   position: absolute;
