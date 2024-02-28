@@ -168,8 +168,6 @@ a {
   display: flex;
   gap: 25px;
   position: relative;
-  overflow: hidden;
-  border-radius: 70px;
 }
 .slider-row {
   height: 100%;
@@ -873,7 +871,7 @@ a {
   }
   .hero-banner {
     height: 520px;
-    border-radius: 50px;
+    border-radius: 20px;
   }
   .banner-text > h1 {
     font-size: 28px;
