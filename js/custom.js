@@ -132,7 +132,7 @@ $(document).ready(function () {
         width: 420,
       },
       1000: {
-        margin: 80,
+        margin: 40,
         autowidth: true,
         items: 3,
         loop: false,
