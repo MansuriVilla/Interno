@@ -300,12 +300,15 @@ a {
 .img-txt {
   background-color: #fff;
 }
-.card-inner {
+.owl-carousel .owl-stage {
+  display: flex;
+}
+.card {
   height: 100%;
+}
+.card-inner {
   background-color: #fff;
-  width: 100%;
   border-radius: 50px;
-  align-items: center;
   padding: 30px;
 }
 .card-t {
