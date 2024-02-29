@@ -17,11 +17,6 @@ function menu() {
   links.classList.toggle("right-ul");
 }
 
-function close() {
-  var links = document.getElementById("ss");
-  links.classList.toggle("close");
-}
-
 $(document).ready(function () {
   $(".search-box").click(function () {
     $(".wrap, .input").toggleClass("active");
@@ -60,12 +55,12 @@ $(document).ready(function () {
         mouseDrag: true,
         autoplay: true,
         autoplayTimeout: 3000,
+        dots: false,
       },
       600: {
         items: 3,
         mouseDrag: true,
         autoplay: true,
-        dots: true,
       },
       1000: {
         items: 5,
