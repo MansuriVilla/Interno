@@ -429,13 +429,14 @@ a {
   display: none;
 }
 .menu-icon {
+  text-align: center;
   border: 2px solid burlywood;
   border-radius: 8px;
-  width: min-content;
-  padding: 10px 15px;
-  font-size: 24px;
+  padding: 7px;
+  font-size: 20px;
   color: burlywood;
-  display: none;
+  height: 40px;
+  width: 40px;
 }
 .menu-links,
 .menu-lis {
@@ -470,9 +471,6 @@ a {
   padding: 20px;
   display: none;
   cursor: pointer;
-}
-.right-ul {
-  display: none;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -580,6 +578,9 @@ a {
   }
 }
 @media only screen and (max-width: 860px) {
+  .right-ul .menu-icon .fa-solid.fa-bars::before {
+    content: "\f00d";
+  }
   .c-h {
     font-size: 25px;
   }
@@ -614,12 +615,11 @@ a {
     width: 100%;
     right: 0;
     top: 0;
-    padding: 20px 0px;
-    animation: drop 0.9s;
-    animation-fill-mode: forwards;
     opacity: 1;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    transition: 0.5s all ease-in-out;
+    transform: translatex(100%);
   }
 
   .menu-links > li {
@@ -651,6 +651,10 @@ a {
   .menu-icon {
     display: block;
     cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    right: 15px;
+    top: 15px;
   }
   .close {
     position: absolute;
@@ -693,11 +697,12 @@ a {
     gap: 80px;
     flex-direction: column;
   }
-  .mobile-menu {
-    display: none;
-  }
   .mobile-menu.right-ul {
     display: block;
+  }
+  .right.right-ul .mobile-menu {
+    display: block;
+    transform: translateX(0%);
   }
 }
 @media only screen and (max-width: 800px) {
@@ -778,7 +783,7 @@ a {
   .nav-folderized .nav.open ul {
     height: auto;
     max-height: 500px;
-    transition: max-height 0.5s ease-in !important;
+    transition: max-height 0.5s ease-in;
   }
   .dsk {
     display: none;
@@ -803,14 +808,11 @@ a {
     z-index: 999;
     background: #ffffff60;
     min-height: 100vh;
-    padding: 20px 0px;
     width: 100%;
     right: 0;
-    animation: drop 0.9s;
-    animation-fill-mode: forwards;
     opacity: 1;
     backdrop-filter: blur(15px);
-    display: none;
+    transition: all 0.5s ease-in-out;
   }
   .mobile-menu.right-ul {
     display: block;
