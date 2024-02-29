@@ -194,6 +194,9 @@ a {
 .con-call-p {
   font-size: 22px;
 }
+.banner-text > p {
+  max-width: 413px;
+}
 .btn {
   background-color: #292f36;
   border-radius: 18px;
