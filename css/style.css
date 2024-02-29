@@ -437,6 +437,7 @@ a {
   color: burlywood;
   height: 40px;
   width: 40px;
+  display: none;
 }
 .menu-links,
 .menu-lis {
@@ -648,7 +649,7 @@ a {
   .menu-links > li > a:hover {
     border-bottom: 2px solid #292f36;
   }
-  .menu-icon {
+  .right.right-ul .menu-icon {
     display: block;
     cursor: pointer;
     position: fixed;
