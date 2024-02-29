@@ -857,7 +857,7 @@ a {
   }
   .btn {
     padding: 12px 18px;
-    margin: 20px auto;
+    margin: 30px auto;
   }
   .p-a {
     font-size: 16px;
@@ -876,7 +876,7 @@ a {
     font-size: 14px;
   }
   .process {
-    margin: 30px 10px;
+    margin: 10px;
     max-width: 275px;
     padding: 0;
   }
@@ -998,6 +998,13 @@ a {
   }
 }
 @media only screen and (max-width: 320px) {
+  .banner-text > h1 {
+    font-size: 28px;
+  }
+  .banner-text > p {
+    font-size: 12px;
+  }
+
   .con-h {
     font-size: 28px;
   }
