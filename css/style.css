@@ -653,7 +653,20 @@ a {
     cursor: pointer;
   }
   .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 8px;
+    border: 2px solid #cda274;
+    height: auto;
+    width: auto;
     display: flex;
+    font-size: 28px;
+    color: #cda274;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
   }
   .process {
     padding: 0px 10px;
