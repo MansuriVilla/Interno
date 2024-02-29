@@ -577,6 +577,8 @@ a {
   }
   .banner-text > p {
     font-size: 18px;
+    max-width: 359px;
+    margin: 0px auto;
   }
   .banner-text {
     bottom: 16%;
@@ -642,7 +644,7 @@ a {
     padding: 0px 10px;
   }
   .hero-banner {
-    height: 420px;
+    height: 520px;
   }
   .search-box {
     border-top: 0px;
@@ -702,15 +704,15 @@ a {
     height: 550px;
   }
   .banner-text > h1 {
-    font-size: 42px;
+    font-size: 32px;
   }
   .banner-text > p {
-    font-size: 18px;
+    font-size: 14px;
     max-width: 359px;
     margin: 0px auto;
   }
   .banner-text {
-    bottom: 20%;
+    bottom: 13%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -853,7 +855,6 @@ a {
     border-radius: 20px;
   }
   .arc-p,
-  .banner-text > p,
   .c-p,
   .con-call-h,
   .con-call-p,
