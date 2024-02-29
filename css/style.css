@@ -82,6 +82,7 @@ a {
 }
 .nav-links {
   position: relative;
+  overflow: hidden;
 }
 .nav-links > a {
   color: #292f36;
