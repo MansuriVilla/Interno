@@ -706,6 +706,8 @@ a {
   }
   .banner-text > p {
     font-size: 18px;
+    max-width: 359px;
+    margin: 0px auto;
   }
   .banner-text {
     bottom: 20%;
@@ -838,6 +840,9 @@ a {
   .dsd,
   .process-in {
     justify-content: center;
+  }
+  .dsd {
+    flex-wrap: wrap;
   }
   .row-card {
     justify-content: center;
