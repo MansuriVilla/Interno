@@ -52,22 +52,20 @@ $(document).ready(function () {
 
   $(".logo-list-slider").owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 30,
     responsiveClass: true,
     responsive: {
       0: {
-        margin: 120,
         items: 1,
         mouseDrag: true,
         autoplay: true,
-        autoplayTimeout: 1500,
+        autoplayTimeout: 3000,
       },
       600: {
-        margin: 120,
         items: 3,
         mouseDrag: true,
         autoplay: true,
-        autoplayTimeout: 1500,
+        dots: true,
       },
       1000: {
         items: 5,

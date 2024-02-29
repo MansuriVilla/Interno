@@ -394,9 +394,6 @@ a {
 .arc-h-t {
   margin: 21px 0;
 }
-.footer {
-  margin: 100px 0 0;
-}
 .footer-left {
   width: 393px;
   margin-right: 101px;
@@ -604,20 +601,6 @@ a {
     -webkit-backdrop-filter: blur(15px);
   }
 
-  @keyframes drop {
-    from {
-      left: 100px;
-    }
-    70% {
-      left: 0px;
-      animation-timing-function: ease-in;
-    }
-    to {
-      left: 0px;
-      animation-timing-function: ease-out;
-    }
-  }
-
   .menu-links > li {
     text-align: center;
     justify-content: center;
@@ -678,6 +661,9 @@ a {
   }
 }
 @media only screen and (max-width: 800px) {
+  .home-page-section {
+    margin: 30px 0px;
+  }
   .card-t-t {
     margin: 0;
     text-align: center;
@@ -858,9 +844,6 @@ a {
     height: 520px;
     border-radius: 20px;
   }
-  .banner-text > h1 {
-    font-size: 28px;
-  }
   .arc-p,
   .banner-text > p,
   .c-p,
@@ -975,6 +958,20 @@ a {
   }
   .col-li {
     margin: 42px 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .arc-text {
+    margin-bottom: 30px;
+  }
+  .sfd,
+  .card-inner,
+  .arc-card {
+    border-radius: 20px;
+  }
+  .arc-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
 @media only screen and (max-width: 576px) {
