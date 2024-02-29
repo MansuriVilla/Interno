@@ -103,8 +103,7 @@ a {
   height: 40px;
   border-radius: 50px;
   width: 40px;
-  line-height: 55px;
-  transition: all 0.5s ease;
+  transition: width 0.5s ease;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -117,6 +116,7 @@ a {
 }
 .input {
   display: none;
+  overflow: hidden;
 }
 .col-h {
   font-size: 25px;
@@ -125,8 +125,6 @@ a {
   display: block;
   position: absolute;
   bottom: 26%;
-  left: auto;
-  width: 80%;
   padding-left: 12px;
   transition: all 0.5s 0.8s ease;
 }
@@ -176,16 +174,7 @@ a {
   background-color: #292f3677 !important;
   color: #fff;
 }
-.sliders {
-  display: flex;
-  gap: 25px;
-  position: relative;
-}
-.slider-row {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
+
 .slider {
   position: relative;
   min-width: 100%;
@@ -247,7 +236,6 @@ a {
   font-size: 24px;
 }
 .process {
-  width: auto;
   padding: 0 30px;
 }
 .p-a {
@@ -334,10 +322,6 @@ a {
   font-size: 22px;
   margin: 25px 0;
 }
-.logo-row {
-  flex-wrap: wrap;
-  row-gap: 5rem;
-}
 
 .logo-row .owl-item .item img {
   height: 60px;
@@ -352,9 +336,7 @@ a {
   font-size: 22px;
 }
 .arc-card {
-  width: min-content;
   border: 1px solid #e7e7e7;
-  height: min-content;
   border-radius: 62px;
   padding: 21px;
   margin: 0px auto;
@@ -372,7 +354,6 @@ a {
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   height: 290px;
-  width: 318px;
   position: relative;
 }
 .img-txt {
@@ -552,9 +533,6 @@ a {
   }
   .con-p {
     font-size: 16px;
-  }
-  .arc-img {
-    width: auto;
   }
   .arc-card {
     width: 420px;
@@ -751,7 +729,6 @@ a {
   .con-right {
     width: 100%;
   }
-  /* faq style start */
   .ftr__list.nav {
     width: 100%;
     text-align: left;
@@ -793,7 +770,6 @@ a {
   .mob {
     display: block;
   }
-  /* faq style end */
   .right-ul,
   .con-h,
   .con-p,
@@ -974,9 +950,6 @@ a {
     font-size: 30px;
   }
 
-  .arc-img {
-    width: auto;
-  }
   .ss-cdr {
     width: 44px;
     height: 44px;
